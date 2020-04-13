@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Phantom Sans';
+            src: url('https://hackclub.com/fonts/Phantom_Sans_0.6/Regular.woff') format('woff'),
+            url('https://hackclub.com/fonts/Phantom_Sans_0.6/Regular.woff2') format('woff2');
+            font-weight:normal;
+            font-style:normal;
+            font-display:swap;
+        }
+
+        @font-face {
+            font-family: 'Phantom Sans';
+            src: url('https://hackclub.com/fonts/Phantom_Sans_0.6/Bold.woff') format('woff'),
+            url('https://hackclub.com/fonts/Phantom_Sans_0.6/Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+            font-display:swap;
+        }
+        html {
+            font-family: "Phantom Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .active-server {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .active-server:before {
+            content: '';
+            position: relative;
+            width: 20px;
+            height: 20px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Social Distancing Server</h1>
+    <span class="active-server">Active</span>
+</body>
+</html>
